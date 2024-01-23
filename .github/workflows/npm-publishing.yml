@@ -1,3 +1,5 @@
+name: Publish to npm
+
 on:
   workflow_dispatch:
 
