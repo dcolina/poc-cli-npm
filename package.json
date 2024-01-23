@@ -1,0 +1,10 @@
+{
+  "name": "poc-cli-npm",
+  "version": "1.0.0",
+  "description": "PoC CLI with NPM registry distribution",
+  "bin":{
+    "poc-cli-npm-macos-aarch-x64": "./bin/poc-cli-npm-macos-aarch-x64"
+  },
+  "author": "Daniel Colina",
+  "license": "MIT"
+}
