@@ -1,0 +1,16 @@
+name: Release simulator
+on: 
+  release:
+    types: [ created ]
+    
+jobs:
+  context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Log GitHub context'
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: |
+          echo "::group:: GitHub Context"
+          echo "$GITHUB_CONTEXT"
+          echo "::endgroup::"
